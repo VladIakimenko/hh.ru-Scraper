@@ -1,14 +1,11 @@
 import os
 import atexit
-import time
 
 import requests
 from bs4 import BeautifulSoup
 from fake_headers import Headers
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 
 from config import URL
 
@@ -46,7 +43,3 @@ class Scraper:
     def terminate(self):
         if self.driver:
             self.driver.quit()
-
-    def refresh(self):
-        body = self.driver.find_element(By.TAG_NAME, 'body')
-        body.send_keys(Keys.CONTROL + 'r')
