@@ -77,12 +77,15 @@ def receive_all(scraper):
             
 def filter_results(vacancies, filters):
     result = []
-    for vacancy in vacancies:
-        for filter_ in filters:
-            check_list = [word.lower().strip() for value in vacancy.values() for word in value.split()]
-            if filter_.lower().strip() in check_list:
-                result.append(vacancy)
-                break
+    if any(filters):
+        for vacancy in vacancies:
+            for filter_ in filters:
+                check_list = [word.lower().strip() for value in vacancy.values() for word in value.split()]
+                if filter_.lower().strip() in check_list:
+                    result.append(vacancy)
+                    break
+    else:
+        result = vacancies
     return result
 
 
