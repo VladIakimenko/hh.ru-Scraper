@@ -8,4 +8,4 @@ The app operates in 2 modes:
 NOTE: Seems to be effected with a non-obvious anti-robots defence. Might require to manually refresh the browser at the 3rd or 4th page. Then it goes through the rest of the pages up to the end successfully.
 
 ## PS
-This is a raw code snippet for personal use, which has never been optiized to be user-friendly or well balanced. It has never intented to be a stand-alone functional app. Might be used as a time saving template for hh.ru scrapers.
+This is a raw code snippet for personal use, which has never been optimized to be user-friendly or well balanced. It has never intented to be a stand-alone functional app. Might be used as a time saving template for hh.ru scrapers.
